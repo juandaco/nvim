@@ -25,6 +25,7 @@ return {
       "javadoc",
       "javascript",
       "jq",
+      "jsdoc",
       "json",
       "json5",
       "kotlin",
@@ -51,6 +52,5 @@ return {
         vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
       end,
     })
-
-  end
+  end,
 }
