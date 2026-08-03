@@ -44,9 +44,22 @@ return {
       "vrl",
       "yaml",
     })
-
     vim.api.nvim_create_autocmd('FileType', {
-      pattern = { '<filetype>' },
+      pattern = {
+        'bash',
+        'java',
+        'javascript',
+        'json',
+        'json5',
+        'lua',
+        'markdown',
+        'query',
+        'rust',
+        'typescript',
+        'vim',
+        'help',
+        'yaml',
+      },
       callback = function()
         vim.treesitter.start()
         vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
