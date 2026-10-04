@@ -36,7 +36,6 @@ return {
       "query",
       "rust",
       "terraform",
-      "tmux",
       "toml",
       "typescript",
       "vim",
