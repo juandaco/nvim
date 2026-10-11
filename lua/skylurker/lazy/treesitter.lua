@@ -1,6 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  lazy = "false",
+  lazy = false,
   branch = "main",
   build = ":TSUpdate",
   config = function()
@@ -46,6 +46,9 @@ return {
     vim.api.nvim_create_autocmd('FileType', {
       pattern = {
         'bash',
+        'gotmpl',
+        'helm',
+        'help',
         'java',
         'javascript',
         'json',
@@ -56,7 +59,6 @@ return {
         'rust',
         'typescript',
         'vim',
-        'help',
         'yaml',
       },
       callback = function()
