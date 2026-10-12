@@ -13,7 +13,6 @@ return {
       "editorconfig",
       "git_config",
       "git_rebase",
-      "gitcommit",
       "gitignore",
       "go",
       "gomod",
